@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-class User_Register_and_Login
+class User
 {
     private:
         char user_Name[20];
@@ -10,13 +10,21 @@ class User_Register_and_Login
         int user_Type;
         int user_Id;
     public:
-        void get_User_Data();
+        void get_User_Data(); 
         void get_Name();
         void get_Usertype();
         void set_UserId();
         void registeration();
         void login();
+        void add_User();
 };
+void User::add_User()
+{
+    // ofstream out("file.dat", ios::app | ios::binary);
+    // obj.get_User_Data(); 
+    // out.write((char *)&obj, sizeof(obj));
+    // out.close();
+}
 
 class Product
 {
@@ -32,7 +40,16 @@ class Product
         void get_Product_Type();
         void get_Product_Price();
         void get_Product_Count();
+        void add_Product();
+
 };
+void Product::add_Product()
+{
+    // ofstream out("file.dat", ios::app | ios::binary);
+    // obj.get_Product_Data();
+    // out.write((char *)&obj, sizeof(obj));
+    // out.close();
+}
 
 class Order
 {
@@ -45,7 +62,15 @@ class Order
         void cancelled_Orders_List();     
         void pending_Orders_List();
         void completed_Orders_List();
+        void add_Order();
 };
+void Order::add_Order()
+{
+    // ofstream out("file.dat", ios::app | ios::binary);
+    // obj.get_Product_Data();
+    // out.write((char *)&obj, sizeof(obj));
+    // out.close();
+}
 
 class Merchant
 {
