@@ -1,2 +1,2 @@
 # e_commerce_system
-An e commerce system
+An E-Commerce System
